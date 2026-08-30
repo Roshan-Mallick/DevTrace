@@ -2,12 +2,542 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>green-glows</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>DevTrace</title>
 </head>
+
 <body>
-    
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>green-glows</span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="#" class="nav-item active">
+                    <span>▣</span>
+                    Overview
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>▦</span>
+                    Activity Heatmap
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>□</span>
+                    Repositories
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>◫</span>
+                    Commits
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>⌘</span>
+                    LeetCode Stats
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>♜</span>
+                    Contests
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>◉</span>
+                    Problems Solved
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>◇</span>
+                    Badges
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>⌁</span>
+                    Insights
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+            <div class="connect-section">
+
+                <p>Connect Accounts</p>
+
+                <button class="account-card">
+                    <div class="account-icon github-icon">
+                        ●
+                    </div>
+
+                    <div>
+                        <strong>GitHub</strong>
+                        <small>Connected</small>
+                    </div>
+                </button>
+
+                <button class="account-card">
+                    <div class="account-icon leetcode-icon">
+                        ◇
+                    </div>
+
+                    <div>
+                        <strong>LeetCode</strong>
+                        <small>Connected</small>
+                    </div>
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Top Navbar -->
+            <header class="topbar">
+
+                <div class="top-nav">
+
+                    <a href="#" class="top-link active">Dashboard</a>
+                    <a href="#" class="top-link">GitHub</a>
+                    <a href="#" class="top-link">LeetCode</a>
+                    <a href="#" class="top-link">Analytics</a>
+                    <a href="#" class="top-link">Insights</a>
+
+                </div>
+
+                <div class="user-area">
+
+                    <button class="theme-btn" id="themeBtn">
+                        ☾
+                    </button>
+
+                    <div class="user-avatar">
+                        R
+                    </div>
+
+                    <span>Roshan Mallick</span>
+
+                    <span class="dropdown">⌄</span>
+
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard Content -->
+            <section class="dashboard">
+
+                <!-- Profile -->
+                <div class="card profile-card">
+
+                    <div class="profile-avatar">
+                        R
+                    </div>
+
+                    <div class="profile-info">
+
+                        <h1>Roshan Mallick</h1>
+
+                        <p>Full Stack Developer</p>
+
+                        <div class="profile-meta">
+                            <span>⌖ Kolkata, India</span>
+                            <span>▣ Joined Nov 2023</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Streak -->
+                <div class="card streak-card">
+
+                    <p class="card-label">Current Streak</p>
+
+                    <div class="streak-number">
+                        <span>🔥</span>
+                        <strong>17</strong>
+                        <small>days</small>
+                    </div>
+
+                    <p class="streak-message">
+                        Keep it up!
+                    </p>
+
+                </div>
+
+
+                <!-- Stats -->
+                <div class="card stats-card">
+
+                    <p class="card-label">All Time Stats</p>
+
+                    <div class="stats-grid">
+
+                        <div class="stat">
+                            <strong>843</strong>
+                            <span>Commits</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>52</strong>
+                            <span>PRs</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>421</strong>
+                            <span>Problems</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>1842</strong>
+                            <span>LeetCode Rating</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Heatmap -->
+                <div class="card heatmap-card">
+
+                    <div class="card-header">
+                        <h2>Activity Heatmap</h2>
+
+                        <span class="heatmap-total">
+                            Total Contributions: <strong>1,284</strong>
+                        </span>
+                    </div>
+
+                    <div class="heatmap">
+
+                        <div class="months">
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                            <span>Aug</span>
+                        </div>
+
+                        <div class="heatmap-body">
+
+                            <div class="days">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+                            </div>
+
+                            <div class="squares" id="heatmap">
+                            </div>
+
+                        </div>
+
+                        <div class="heatmap-footer">
+
+                            <div class="legend">
+                                <span>Less</span>
+                                <i class="level-0"></i>
+                                <i class="level-1"></i>
+                                <i class="level-2"></i>
+                                <i class="level-3"></i>
+                                <i class="level-4"></i>
+                                <span>More</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contribution Breakdown -->
+                <div class="card breakdown-card">
+
+                    <h2>Contribution Breakdown</h2>
+
+                    <div class="donut-wrapper">
+
+                        <div class="donut">
+                            <div class="donut-center">
+                                <strong>1,284</strong>
+                                <span>Total</span>
+                            </div>
+                        </div>
+
+                        <div class="breakdown-list">
+
+                            <div>
+                                <i class="green"></i>
+                                <span>GitHub Commits</span>
+                                <strong>843</strong>
+                            </div>
+
+                            <div>
+                                <i class="blue"></i>
+                                <span>LeetCode Solved</span>
+                                <strong>421</strong>
+                            </div>
+
+                            <div>
+                                <i class="orange"></i>
+                                <span>Pull Requests</span>
+                                <strong>52</strong>
+                            </div>
+
+                            <div>
+                                <i class="purple"></i>
+                                <span>Others</span>
+                                <strong>—</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GitHub -->
+                <div class="card activity-card">
+
+                    <div class="activity-title">
+                        <span class="service-icon github">●</span>
+                        <h2>GitHub Activity</h2>
+                    </div>
+
+                    <div class="activity-main">
+                        <strong>843</strong>
+                        <span>Commits <b>↑ 24%</b></span>
+                    </div>
+
+                    <div class="mini-chart github-chart">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="activity-stats">
+                        <p>
+                            Pull Requests
+                            <strong>52 <b>↑ 18%</b></strong>
+                        </p>
+
+                        <p>
+                            Issues Opened
+                            <strong>38 <em>↓ 5%</em></strong>
+                        </p>
+
+                        <p>
+                            Repositories
+                            <strong>23 <b>↑ 3%</b></strong>
+                        </p>
+                    </div>
+
+                    <a href="#" class="view-link">
+                        View GitHub Profile →
+                    </a>
+
+                </div>
+
+
+                <!-- LeetCode -->
+                <div class="card activity-card">
+
+                    <div class="activity-title">
+                        <span class="service-icon leetcode">◇</span>
+                        <h2>LeetCode Activity</h2>
+                    </div>
+
+                    <div class="activity-main">
+                        <strong>421</strong>
+                        <span>Problems Solved <b>↑ 31%</b></span>
+                    </div>
+
+                    <div class="mini-chart leetcode-chart">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="activity-stats">
+                        <p>
+                            Easy
+                            <strong>152 <b>↑ 20%</b></strong>
+                        </p>
+
+                        <p>
+                            Medium
+                            <strong>231 <b>↑ 28%</b></strong>
+                        </p>
+
+                        <p>
+                            Hard
+                            <strong>38 <b>↑ 15%</b></strong>
+                        </p>
+                    </div>
+
+                    <a href="#" class="view-link">
+                        View LeetCode Profile →
+                    </a>
+
+                </div>
+
+
+                <!-- Trend -->
+                <div class="card trend-card">
+
+                    <div class="card-header">
+                        <h2>Activity Trend</h2>
+
+                        <select>
+                            <option>Last 6 Months</option>
+                            <option>Last Year</option>
+                            <option>All Time</option>
+                        </select>
+                    </div>
+
+                    <div class="graph">
+
+                        <div class="graph-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <svg viewBox="0 0 500 180" preserveAspectRatio="none">
+
+                            <polyline
+                                class="line github-line"
+                                points="0,130 90,90 180,45 270,45 360,65 450,50"
+                            />
+
+                            <polyline
+                                class="line leetcode-line"
+                                points="0,145 90,140 180,115 270,85 360,120 450,115"
+                            />
+
+                            <polyline
+                                class="line pr-line"
+                                points="0,160 90,158 180,145 270,135 360,150 450,148"
+                            />
+
+                        </svg>
+
+                    </div>
+
+                    <div class="graph-legend">
+                        <span class="github-dot">● GitHub Commits</span>
+                        <span class="leetcode-dot">● LeetCode Solved</span>
+                        <span class="pr-dot">● Pull Requests</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Insights -->
+                <div class="card insights-card">
+
+                    <h2>Insights</h2>
+
+                    <div class="insights-grid">
+
+                        <div class="insight">
+                            <span class="insight-icon green-bg">↗</span>
+                            <div>
+                                <small>Most Active Day</small>
+                                <strong>Monday</strong>
+                                <p>23% more activity</p>
+                            </div>
+                        </div>
+
+                        <div class="insight">
+                            <span class="insight-icon blue-bg">◷</span>
+                            <div>
+                                <small>Most Active Time</small>
+                                <strong>7PM – 11PM</strong>
+                                <p>Peak productivity</p>
+                            </div>
+                        </div>
+
+                        <div class="insight">
+                            <span class="insight-icon purple-bg">◉</span>
+                            <div>
+                                <small>Total Coding Time</small>
+                                <strong>287 hrs</strong>
+                                <p>Last 6 months</p>
+                            </div>
+                        </div>
+
+                        <div class="insight">
+                            <span class="insight-icon orange-bg">↑</span>
+                            <div>
+                                <small>Consistency Score</small>
+                                <strong>82%</strong>
+                                <p>Excellent</p>
+
+                                <div class="progress">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="insight">
+                            <span class="insight-icon red-bg">♜</span>
+                            <div>
+                                <small>Ranking</small>
+                                <strong>Top 12%</strong>
+                                <p>Among peers</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
